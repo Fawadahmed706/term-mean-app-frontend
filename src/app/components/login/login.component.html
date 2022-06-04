@@ -1,0 +1,41 @@
+<div class="abc">
+  <form
+    class="d-flex flex-column justify-content-center align-items-center h-100"
+    id="formElem"
+    [formGroup]="loginForm"
+    (ngSubmit)="login()"
+  >
+    <h2>Account Login</h2>
+    <div
+      class="border border-dark w-25 mt-5 rounded-3 d-flex flex-column justify-content-center align-items-center h-60"
+    >
+      <div class="mb-3 mt-5">
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          placeholder="User name"
+          name="email"
+          formControlName="email"
+        />
+      </div>
+      <div class="mb-3 mt-5">
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+          placeholder="Password"
+          name="password"
+          formControlName="password"
+        />
+      </div>
+      <div class="mb-3 form-check"></div>
+      <div class="text-center w-25 mb-5">
+        <button class="btn btn-primary w-100 rounded-2">Login</button>
+      </div>
+      <div class="text-center w-25 mb-5">
+        <button class="btn btn-primary w-100 rounded-2">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
